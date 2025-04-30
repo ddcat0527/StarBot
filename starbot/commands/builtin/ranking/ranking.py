@@ -128,7 +128,7 @@ async def ranking(app: Ariadne,
         # 底部版权信息，请务必保留此处
         pic.draw_text("")
         pic.draw_text_right(25, "Designed By StarBot", Color.GRAY)
-        pic.draw_text_right(25, "机器人维护：1648724993", Color.PINK)
+        pic.draw_text_right(25, "机器人维护：1648724993",(253,94,15))
         pic.crop_and_paste_bottom()
 
         await app.send_message(sender, MessageChain(Image(base64=pic.base64())))
